@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#
+# Summary: start jenkins
+#
+
+launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist

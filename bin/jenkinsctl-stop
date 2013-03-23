@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#
+# Summary: stop jenkins
+#
+
+launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist

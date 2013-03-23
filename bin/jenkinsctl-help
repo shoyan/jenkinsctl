@@ -1,0 +1,7 @@
+Usage: jenkinsctl <command>
+
+Note: When run, please give sudo
+
+jenkinsctl commands are:
+   start       start jenkins daemon
+   stop        stop jenkins daemon

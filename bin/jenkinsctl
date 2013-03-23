@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+command="$1"
+
+case "$command" in
+"" | "-h" | "--help" )
+    cat "$HOME/.jenkinsctl/bin/jenkinsctl-help"
+  ;;
+* )
+  command_path="$(command -v "jenkinsctl-$command" || true)"
+
+  if [ -z "$command_path" ]; then
+    echo "jenkinsctl: no such command \`$command'" >&2
+    exit 1
+  fi
+
+  exec "$command_path"
+
+  ;;
+esac
