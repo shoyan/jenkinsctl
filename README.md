@@ -6,12 +6,12 @@ Start &amp; Stop Jenkins daemon on Mac OS X
 ## Usage
 start jenkins deamon  
 ```
-sudo jenkinsctl start
+jenkinsctl start
 ```
 
 stop jenkins deamon  
 ```
-sudo jenkinsctl stop
+jenkinsctl stop
 ```
 
 ## Instllation
